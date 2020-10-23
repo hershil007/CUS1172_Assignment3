@@ -1,0 +1,132 @@
+body
+{
+    background-color: #002752;
+}
+
+h1,h2,h3,h4,h5
+{
+    color: #f1f1f1;
+}
+
+p
+{
+    color: #f1f1f1;
+}
+
+label
+{
+    color: #f1f1f1;
+}
+
+
+label[for="quiz1"]
+{
+    position: relative;
+    font-weight: 300;
+    font-size: 1.35em;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    color: #b3d7ff;
+}
+
+label[for="quiz2"]
+{
+    position: relative;
+    font-weight: 300;
+    font-size: 1.35em;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    color: #b3d7ff;
+}
+
+label[for="choice1"]
+{
+    position: relative;
+    font-weight: 200;
+    font-size: 1em;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    color: #b8daff;
+}
+
+label[for="choice2"]
+{
+    position: relative;
+    font-weight: 200;
+    font-size: 1em;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    color: #b8daff;
+}
+
+label[for="choice3"]
+{
+    position: relative;
+    font-weight: 200;
+    font-size: 1em;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    color: #b8daff;
+}
+
+label[for="choice4"]
+{
+    position: relative;
+    font-weight: 200;
+    font-size: 1em;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    color: #b8daff;
+}
+
+label:hover
+{
+    color: #ffffff;
+}
+
+input[type="radio"]
+{
+    background-color: #181818;
+}
+
+input[type="checkbox"]
+{
+    background-color: #181818;
+}
+
+
+input[type=text]
+{
+    font-family: Verdana;
+    font-size: 20px;
+    background-color: #181818;
+    border:1px solid #03c2fc;
+    color: white;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+input[type=submit]
+{
+    font-family: Verdana;
+    font-size: 20px;
+    background-color: #181818;
+    border:1px solid #03c2fc;
+    color: white;
+    border-radius: 5px;
+    transition-duration: 0.4s;
+}
+
+input[type=submit]:hover
+{
+    background-color: #0088ff;
+    color:#000000;
+}
+
+

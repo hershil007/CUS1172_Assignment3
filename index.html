@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script src="Scripts/quiz.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="Stylesheets/quiz_style.css">
     <title>Online Quiz Application</title>
 </head>
 
 <body>
-    <div id="view-widget">
+    <div id="view-widget" class="text-center">
     </div>
 </body>
 
 <script id="start" type="text/x-handlebars-template">
-    <h1>Online Programming Quiz!</h1>
-    <form id="quiz-select">
+    <h1 class="text-center">Online Programming Quiz!</h1>
+    <form id="quiz-select" class="text-center">
         <label for="name">Enter Your Name:</label>
         <input id="name" autocomplete="off" placeholder="Name" type="text" required>
         <h4>Select a Quiz</h4>
@@ -28,33 +29,106 @@
 </script>
 
 <script id="quiz-view" type="text/x-handlebars-template">
-    <h3>Score: {{this.correct}} / {{this.total}}</h3>
-    <div id="question-view">
+    <h3 class="text-center">Score: {{this.correct}} / {{this.total}}</h3>
+    <div id="question-view" class="text-center">
 
     </div>
 </script>
 
 <script id="text-question" type="text/x-handlebars-template">
-    <h1>Question {{this.current_question}}</h1>
-    <p>{{question}}</p>
-    <form id="t-answer-form" onsubmit="check_answer('text'); return false;">
+    <h1 class="text-center">Question {{this.current_question}}</h1>
+    <p class="text-center">{{question}}</p>
+    <form id="t-answer-form" class="text-center" onsubmit="check_answer('text'); return false;">
         <label for="answer">Answer:</label>
         <input id="answer" autocomplete="off" placeholder="Type your answer" type="text" required>
         <input id="submit-answer" type="Submit" value="Submit">
     </form>
-    <div id="result">
+    <div id="result" class="text-center">
     </div>
 </script>
 </html>
 
+<script id="blank-question" type="text/x-handlebars-template">
+    <h1 class="text-center">Question {{this.current_question}}</h1>
+    <h3 class="text-center">Fill in the blank.</h3>
+    <form id="t-answer-form" class="text-center" onsubmit="check_answer('Blank'); return false;">
+        <label for="answer">{{question_1}}</label>
+        <input id="answer" autocomplete="off" placeholder="Type your answer" type="text" required>
+        <label for="answer">{{question_2}}</label>
+        <input id="submit-answer" type="Submit" value="Submit">
+    </form>
+    <div id="result" class="text-center">
+    </div>
+</script>
+</html>
+
+<script id="sc-question" type="text/x-handlebars-template">
+    <h1 class="text-center">Question {{this.current_question}}</h1>
+    <h3 class="text-center">{{question}}</h3>
+    <form id="t-answer-form" onsubmit="check_answer('SC'); return false;">
+        <p>Select one answer:</p>
+        <input id="choice1" type="radio" name="choice" value="Choice1" required>
+        <label for="choice1">{{choice1}}</label>
+        <br>
+        <input id="choice2" type="radio" name="choice" value="Choice2" required>
+        <label for="choice2">{{choice2}}</label>
+        <br>
+        <input id="choice3" type="radio" name="choice" value="Choice3" required>
+        <label for="choice3">{{choice3}}</label>
+        <br>
+        <input id="submit-answer" type="Submit" value="Submit">
+    </form>
+    <div id="result" class="text-center">
+    </div>
+</script>
+
+<script id="mc-question" type="text/x-handlebars-template">
+    <h1 class="text-center">Question {{this.current_question}}</h1>
+    <h3 class="text-center">{{question}}</h3>
+    <form id="t-answer-form" onsubmit="check_answer('MC'); return false;">
+        <p>Select all that apply:</p>
+        <input id="choice1" type="checkbox" name="choice" value="1">
+        <label for="choice1">{{choice1}}</label>
+        <br>
+        <input id="choice2" type="checkbox" name="choice" value="2">
+        <label for="choice2">{{choice2}}</label>
+        <br>
+        <input id="choice3" type="checkbox" name="choice" value="3">
+        <label for="choice3">{{choice3}}</label>
+        <br>
+        <input id="choice4" type="checkbox" name="choice" value="4">
+        <label for="choice4">{{choice4}}</label>
+        <br>
+        <input id="submit-answer" type="Submit" value="Submit">
+    </form>
+    <div id="result" class="text-center">
+    </div>
+</script>
+
 <script id="explanation" type="text/x-handlebars-template">
-    <h3>Sorry, this answer is wrong</h3>
-    <p>{{explanation}}</p>
-    <form id="wrong-answer" onsubmit="load_question(); return false;">
+    <h3 class="text-center">Sorry, this answer is wrong</h3>
+    <p class="text-center">{{explanation}}</p>
+    <form id="wrong-answer" class="text-center" onsubmit="load_quiz_view(); return false;">
         <input id="got-it" type="Submit" value="Got it!">
     </form>
 </script>
 
 <script id="right" type="text/x-handlebars-template">
-    <h2>Correct!</h2>
+    <h2 class="text-center">Correct!</h2>
+</script>
+
+<script id="passed" type="text/x-handlebars-template">
+    <h1 class="text-center">Congrats {{name}}!  You passed the quiz! :)</h1>
+    <h2 class="text-center">Your score was: {{correct}}/{{total}} ({{score}})</h2>
+    <form id="home" class="text-center" onsubmit="reload()">
+        <input id="return" type="Submit" value="Go Home">
+    </form>
+</script>
+
+<script id="failed" type="text/x-handlebars-template">
+    <h1 class="text-center">Sorry {{name}},  You failed the quiz! :(</h1>
+    <h2 class="text-center">Your score was: {{correct}}/{{total}} ({{score}})</h2>
+    <form id="home" class="text-center" onsubmit="reload()">
+        <input id="return" type="Submit" value="Go Home">
+    </form>
 </script>
