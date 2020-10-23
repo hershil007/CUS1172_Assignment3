@@ -1,40 +1,161 @@
 {
 	"Quiz1": [
 		{
-			"Type": "Text",
+			"Type": "SC",
 			"Question_Num": 1,
-			"Question": "What is 2+2?",
-			"Answer": "4",
-			"Explanation": "2+2 is the addition of 2 and 2, thus it equals 4."
+			"Question": "What is RAM?",
+			"Choice1" : "A Truck",
+			"Choice2" : " A Goat",
+			"Choice3" : "Memory for your computer",
+			"Answer": "Choice3",
+			"Explanation": ""
+		},
+		{
+			"Type": "SC",
+			"Question_Num" : 2,
+			"Question": "Where does RAM go?",
+			"Choice1" : "On a Mountain",
+			"Choice2" : "On the Road",
+			"Choice3" : "Inside a computer",
+			"Answer" : "Choice3",
+			"Explanation" : ""
 		},
 		{
 			"Type": "MC",
-			"Question_Num" : 2,
-			"Question": "for i in range(0,4): print(i)  What is the output?",
-			"Choice1" : "1,2,3,4",
-			"Choice2" : "0,1,2,3",
-			"Choice3" : "1,2,3",
-			"Answer" : "Choice2",
-			"Explanation" : "The for loop ranges from inclusive lower bound to exclusive upper bound."
+			"Question_Num" : 3,
+			"Question" : "Which are  computer peripherals? (Choose All that Apply)",
+			"Choice1" : "Mouse",
+			"Choice2" : "Flash Drive",
+			"Choice3" : "An Add-on for your car",
+			"Choice4" : "Keyboard",
+			"Answer" : [1,2,4],
+			"Explanation" : ""
+		},
+		{
+			"Type": "Blank",
+			"Question_Num": 4,
+			"Question_1": "RAM stands for Random",
+			"Question_2": "Memory",
+			"Answer": "Access",
+			"Explanation": ""
 		}
+		{
+			"Type": "MC",
+			"Question_Num" : 5,
+			"Question" : "Which are Access modifiers in Java (Choose All the Apply)",
+			"Choice1" : "Default",
+			"Choice2" : "Private",
+			"Choice3" : "Sergent",
+			"Choice4" : "Protected",
+			"Answer" : [1,2,4],
+			"Explanation" : ""
+		},
+		{
+			"Type": "MC",
+			"Question_Num" : 6,
+			"Question" : "Which are sorting algorithms (Choose All the Apply)",
+			"Choice1" : "Heap",
+			"Choice2" : "Radix",
+			"Choice3" : "Quick",
+			"Choice4" : "Pop",
+			"Answer" : [1,2,3],
+			"Explanation" : ""
+		},
+		{
+			"Type": "Blank",
+			"Question_Num": 7,
+			"Question_1": "The",
+			"Question_2": "is the fastest sorting Algorithm",
+			"Answer": "Quicksort",
+			"Explanation": ""
+		},
+		{
+			"Type" : "Text",
+			"Question_Num" : 9,
+			"Question" : "What Polymorphism?",
+			"Answer": "Polymorphism is the ability of an object to take on many forms.",
+			"Explanation": ""
+		},
+		{
+			"Type": "SC",
+			"Question_Num": 10,
+			"Question": "Which is not a OOP Concepty",
+			"Choice1" : "Abstraction",
+			"Choice2" : " Multi-threaded",
+			"Choice3" : "Encapsulation",
+			"Answer": "Choice2",
+			"Explanation": ""
+		}
+
+
 	],
 	"Quiz2": [
 		{
-			"Type": "Text",
-			"Question_Num": 1,
-			"Question": "What is 4+4?",
-			"Answer": "8",
-			"Explanation": "4+4 is the addition of 4 and 4, thus it equals 8."
+			"Type" : "Text",
+			"Question_Num" : 1,
+			"Question" : "What is an exception?",
+			"Answer": "An exception is a problem that arises during the execution of a program.",
+			"Explanation": ""
+		},
+		{
+			"Type" : "Text",
+			"Question_Num" : 2,
+			"Question" : "What is Typecasting?",
+			"Answer": "The concept of assigning a variable of one data type to a variable of another data type. It is not possible for the boolean data type.",
+			"Explanation": ""
+		},
+		{
+			"Type" : "Text",
+			"Question_Num" :3,
+			"Question" : "Define Inheritance?",
+			"Answer": "It is the process where one object acquires the properties of another.",
+			"Explanation": ""
+		},
+		{
+			"Type" : "Text",
+			"Question_Num" :4,
+			"Question" : "What do you mean by a constructor?",
+			"Answer": " A constructor is a method that has the same name as that of the class to which it belongs. As soon as a new object is created, a constructor corresponding to the class gets invoked. ",
+			"Explanation": ""
 		},
 		{
 			"Type": "MC",
-			"Question_Num" : 2,
-			"Question": "for i in range(0,5): print(i)  What is the output?",
-			"Choice1" : "1,2,3,4",
-			"Choice2" : "0,1,2,3",
-			"Choice3" : "1,2,3",
-			"Answer" : "Choice2",
-			"Explanation" : "The for loop ranges from inclusive lower bound to exclusive upper bound."
-		}
+			"Question_Num" : 5,
+			"Question": "What is Java (Check All that Applies",
+			"Choice1" : "You can buy at Starbucks",
+			"Choice2" : "Made from bean imported from Columbia",
+			"Choice3" : "A OO high level general purpose programming language",
+			"Answer" : "[3]",
+			"Explanation" : ""
+		},
+		{
+			"Type": "SC",
+			"Question_Num": 6,
+			"Question": "What is a Java Package?",
+			"Choice1" : "A Carton of Coffee",
+			"Choice2" : " A single java file",
+			"Choice3" : "A way of grouping a variety of classes and or interfaces togther.",
+			"Answer": "Choice3",
+			"Explanation": ""
+		},
+		{
+			"Type": "SC",
+			"Question_Num": 7,
+			"Question": "What is a Microprocessor?",
+			"Choice1" : "A small machine to shred cheese",
+			"Choice2" : " A small machine to make coffee",
+			"Choice3" : "A Digital device on a chip which performs basic operations.",
+			"Answer": "Choice3",
+			"Explanation": ""
+		},
+		{
+			"Type" : "Text",
+			"Question_Num" :8,
+			"Question" : "What is Cache Memory?",
+			"Answer": "This is special very high-speed memory. It is used to speed up and synchronizing with high-speed CPU.",
+			"Explanation": ""
+		},
+			
+
 	]
 }
