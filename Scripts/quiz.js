@@ -218,8 +218,8 @@ async function check_answer(q_type)
         let vars = {
             explanation: question['Explanation']
         }
-        load_view('#explanation', '#result', vars);
         appState.question_num++;
+        load_view('#explanation', '#result', vars);
     }
 }
 

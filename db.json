@@ -42,7 +42,7 @@
 			"Question_1": "The",
 			"Question_2": "is the fastest sorting Algorithm",
 			"Answer": "Quicksort",
-			"Explanation": ""
+			"Explanation": "Quicksort is the fastest sorting Algorithm"
 		},
 		{
 			"Type" : "Text",
