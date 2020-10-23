@@ -54,7 +54,7 @@
 		{
 			"Type": "TF",
 			"Question_Num": 7,
-			"Question" : "Variables in python strongly typed?",
+			"Question" : "Are variables in python strongly typed?",
 			"Answer" : "False",
 			"Explanation" : "Variables are loosley types in python."
 		},
