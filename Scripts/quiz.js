@@ -47,7 +47,6 @@ function load_quiz_view()
 async function load_question()
 {
     //Check to see if quiz is done
-    console.log(appState.question_num);
     if (appState.question_num === appState.total)
     {
         finish_quiz();
@@ -182,7 +181,9 @@ async function check_answer(q_type)
                 console.log(question["Answer"].length);
             }
         }
-        console.log(count);
+        //console.log(count);
+        //console.log(answer);
+        //console.log(question["Answer"]);
         if(count === question["Answer"].length)
         {
             correct();
