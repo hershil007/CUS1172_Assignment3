@@ -123,53 +123,17 @@
 		{
 			"Type": "MC",
 			"Question_Num" : 15,
-			"Question" : "Which are  computer peripherals? (Choose All that Apply)",
-			"Choice1" : "Mouse",
-			"Choice2" : "Flash Drive",
-			"Choice3" : "An Add-on for your car",
-			"Choice4" : "Keyboard",
-			"Answer" : [1,2,4],
-			"Explanation" : "An add-on for your car is not (always) a computer peripheral"
-		},
-		{
-			"Type" : "Text",
-			"Question_Num" : 16,
-			"Question" : "What is a problem that arises during the execution of a program?",
-			"Answer": "Exception",
-			"Explanation": "An exception is a problem that arises during the execution of a program."
-		},
-		{
-			"Type": "MC",
-			"Question_Num" : 17,
 			"Question": "What is Java? (Check All that Applies)",
 			"Choice1" : "Something you can buy at Starbucks",
-			"Choice2" : "Somethign made from beans imported from Columbia",
+			"Choice2" : "Something made from beans imported from Columbia",
 			"Choice3" : "A OO high level general purpose programming language",
 			"Choice4" : "A cup of coffee",
 			"Answer" : "[3]",
 			"Explanation" : "In terms of programming, Java is an OO high level general purpose programming language."
 		},
 		{
-			"Type": "SC",
-			"Question_Num": 18,
-			"Question": "What is a Java Package?",
-			"Choice1" : "A Carton of Coffee",
-			"Choice2" : " A single java file",
-			"Choice3" : "A way of grouping a variety of classes and or interfaces togther.",
-			"Answer": "Choice3",
-			"Explanation": "In terms of programming, a java package is a way of grouping a variety of classes and or interfaces together."
-		},
-		{
-			"Type": "Blank",
-			"Question_Num": 19,
-			"Question_1": "API stands for ",
-			"Question_2": "Programming Interface.",
-			"Answer": "Application",
-			"Explanation": "API stands for Application Programming Interface."
-		},
-		{
 			"Type": "TF",
-			"Question_Num": 20,
+			"Question_Num": 16,
 			"Question" : "GNU stands for GNU is Not Unix.",
 			"Answer" : "True",
 			"Explanation" : "GNU does in fact stand for GNU is Not Unix.  So then what does GNU stand for? GNU stands for GNU is Not Unix.  But what does GNU stand for?"
