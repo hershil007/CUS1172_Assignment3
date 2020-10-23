@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script src="Scripts/quiz.js"></script>
+    <link rel="stylesheet" href="Stylesheets/quiz_style.css">
+    <title>Online Quiz Application</title>
+</head>
+
+<body>
+    <div id="view-widget">
+    </div>
+</body>
+
+<script id="start" type="text/x-handlebars-template">
+    <h1>Online Programming Quiz!</h1>
+    <form id="quiz-select">
+        <label for="name">Enter Your Name:</label>
+        <input id="name" autocomplete="off" placeholder="Name" type="text" required>
+        <h4>Select a Quiz</h4>
+        <label for="quiz1">Quiz 1</label>
+        <input type="radio" id="quiz1" name="quiz" value="quiz1" required>
+        <label for="quiz2">Quiz 2</label>
+        <input type="radio" id="quiz2" name="quiz" value="quiz2" required>
+        <input id="start-quiz" type="submit" value="Start Quiz!">
+    </form>
+</script>
+
+<script id="quiz-view" type="text/x-handlebars-template">
+    <h3>Score: {{this.correct}} / {{this.total}}</h3>
+    <div id="question-view">
+
+    </div>
+</script>
+
+<script id="text-question" type="text/x-handlebars-template">
+    <h1>Question {{this.current_question}}</h1>
+    <p>{{question}}</p>
+    <form id="t-answer-form" onsubmit="check_answer('text'); return false;">
+        <label for="answer">Answer:</label>
+        <input id="answer" autocomplete="off" placeholder="Type your answer" type="text" required>
+        <input id="submit-answer" type="Submit" value="Submit">
+    </form>
+    <div id="result">
+    </div>
+</script>
+</html>
+
+<script id="explanation" type="text/x-handlebars-template">
+    <h3>Sorry, this answer is wrong</h3>
+    <p>{{explanation}}</p>
+    <form id="wrong-answer" onsubmit="load_question(); return false;">
+        <input id="got-it" type="Submit" value="Got it!">
+    </form>
+</script>
+
+<script id="right" type="text/x-handlebars-template">
+    <h2>Correct!</h2>
+</script>
