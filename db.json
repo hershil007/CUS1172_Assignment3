@@ -297,49 +297,6 @@
 		{
 			"Type": "MC",
 			"Question_Num" : 15,
-			"Question" : "What are integral variable types in java?  (Select all that apply)",
-			"Choice1" : "short",
-			"Choice2" : "long",
-			"Choice3" : "big",
-			"Choice4" : "small",
-			"Answer" : [1,2],
-			"Explanation" : "short and long are both numerical variable types in jave, big and small are not."
-		},
-		{
-			"Type": "Blank",
-			"Question_Num": 16,
-			"Question_1": "In java, text can be saved as a ",
-			"Question_2": "or char",
-			"Answer": "String",
-			"Explanation": "Text can be saved as a String or a char in java."
-		},
-		{
-			"Type" : "Text",
-			"Question_Num" : 17,
-			"Question" : "n = 20, a = 80 , sum = n + a  What is sum?",
-			"Answer": "100",
-			"Explanation": "Sum is n + a, which is 20 + 80 = 100."
-		},
-		{
-			"Type": "SC",
-			"Question_Num": 18,
-			"Question": "x = 2, if x > 5: print(Big Number!), else: print(Small Number!)  What is the output?",
-			"Choice1" : "Big Number!",
-			"Choice2" : "Small Number!",
-			"Choice3" : "Null",
-			"Answer": "Choice2",
-			"Explanation": "x = 10, which is greater than 5, so the output would be Big Number!"
-		},
-		{
-			"Type": "TF",
-			"Question_Num": 19,
-			"Question" : "There are 7 bits in a byte",
-			"Answer" : "False",
-			"Explanation" : "There are 8 bits in a byte."
-		},
-		{
-			"Type": "MC",
-			"Question_Num" : 20,
 			"Question" : "How good is this site?  (Select all that apply)",
 			"Choice1" : "Great",
 			"Choice2" : "Informative",
