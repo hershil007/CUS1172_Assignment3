@@ -1,7 +1,7 @@
 {
 	"Quiz1": [
 		{
-			"Type": 'Text'
+			"Question_type": "Text"
 		}
 	]
 }
