@@ -1,7 +1,40 @@
 {
 	"Quiz1": [
 		{
-			"Question_type": "Text"
+			"Type": "Text",
+			"Question_Num": 1,
+			"Question": "What is 2+2?",
+			"Answer": "4",
+			"Explanation": "2+2 is the addition of 2 and 2, thus it equals 4."
+		},
+		{
+			"Type": "MC",
+			"Question_Num" : 2,
+			"Question": "for i in range(0,4): print(i)  What is the output?",
+			"Choice1" : "1,2,3,4",
+			"Choice2" : "0,1,2,3",
+			"Choice3" : "1,2,3",
+			"Answer" : "Choice2",
+			"Explanation" : "The for loop ranges from inclusive lower bound to exclusive upper bound."
+		}
+	],
+	"Quiz2": [
+		{
+			"Type": "Text",
+			"Question_Num": 1,
+			"Question": "What is 4+4?",
+			"Answer": "8",
+			"Explanation": "4+4 is the addition of 4 and 4, thus it equals 8."
+		},
+		{
+			"Type": "MC",
+			"Question_Num" : 2,
+			"Question": "for i in range(0,5): print(i)  What is the output?",
+			"Choice1" : "1,2,3,4",
+			"Choice2" : "0,1,2,3",
+			"Choice3" : "1,2,3",
+			"Answer" : "Choice2",
+			"Explanation" : "The for loop ranges from inclusive lower bound to exclusive upper bound."
 		}
 	]
 }
