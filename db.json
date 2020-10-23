@@ -138,6 +138,17 @@
 			"Answer" : "True",
 			"Explanation" : "GNU does in fact stand for GNU is Not Unix.  So then what does GNU stand for? GNU stands for GNU is Not Unix.  But what does GNU stand for?"
 		}
+		{
+			"Type": "MC",
+			"Question_Num" : 17,
+			"Question" : "Which are  computer peripherals? (Choose All that Apply)",
+			"Choice1" : "Mouse",
+			"Choice2" : "Flash Drive",
+			"Choice3" : "An Add-on for your car",
+			"Choice4" : "Keyboard",
+			"Answer" : [1,2,4],
+			"Explanation" : "An add-on for your car is not (always) a computer peripheral"
+		},
 	],
 	"Quiz2": [
 		{

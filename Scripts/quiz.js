@@ -3,7 +3,7 @@ const appState = {
     name : '',
     quiz_num : '',
     correct: 0,
-    total: 9,
+    total: 17,
     question_num: 0,
 }
 
@@ -113,7 +113,7 @@ async function check_answer(q_type)
     if (q_type === 'text')
     {
         let user_answer = document.querySelector('#answer').value;
-        if (user_answer === question["Answer"])
+        if (user_answer.toUpperCase() === question["Answer"].toUpperCase())
         {
             correct();
         }
@@ -196,7 +196,7 @@ async function check_answer(q_type)
     else if (q_type === 'Blank')
     {
         let user_answer = document.querySelector('#answer').value;
-        if (user_answer === question["Answer"])
+        if (user_answer.toUpperCase() === question["Answer"].toUpperCase())
         {
             correct();
         }
