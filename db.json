@@ -259,8 +259,23 @@
 			"Explanation": "ASCII stands for American Standard of Information Interchange."
 		},
 		{
+			"Type": "TF",
+			"Question_Num": 15,
+			"Question" : "There are 7 bits in a byte",
+			"Answer" : "False",
+			"Explanation" : "There are 8 bits in a byte."
+		},
+		{
+			"Type": "Blank",
+			"Question_Num": 16,
+			"Question_1": "In java, text can be saved as a ",
+			"Question_2": "or char",
+			"Answer": "String",
+			"Explanation": "Text can be saved as a String or a char in java."
+		},
+		{
 			"Type": "MC",
-			"Question_Num" : 15,
+			"Question_Num" : 17,
 			"Question" : "How good is this site?  (Select all that apply)",
 			"Choice1" : "Great",
 			"Choice2" : "Informative",
