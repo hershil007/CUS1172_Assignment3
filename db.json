@@ -38,7 +38,7 @@
 			"Question_2": "Memory",
 			"Answer": "Access",
 			"Explanation": ""
-		}
+		},
 		{
 			"Type": "MC",
 			"Question_Num" : 5,
@@ -86,8 +86,6 @@
 			"Answer": "Choice2",
 			"Explanation": ""
 		}
-
-
 	],
 	"Quiz2": [
 		{
@@ -154,8 +152,6 @@
 			"Question" : "What is Cache Memory?",
 			"Answer": "This is special very high-speed memory. It is used to speed up and synchronizing with high-speed CPU.",
 			"Explanation": ""
-		},
-			
-
+		}
 	]
 }
