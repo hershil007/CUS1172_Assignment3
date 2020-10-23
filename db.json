@@ -137,7 +137,7 @@
 			"Question" : "GNU stands for GNU is Not Unix.",
 			"Answer" : "True",
 			"Explanation" : "GNU does in fact stand for GNU is Not Unix.  So then what does GNU stand for? GNU stands for GNU is Not Unix.  But what does GNU stand for?"
-		}
+		},
 		{
 			"Type": "MC",
 			"Question_Num" : 17,
