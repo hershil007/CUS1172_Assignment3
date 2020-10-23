@@ -95,6 +95,14 @@ async function load_question()
         }
         load_view('#blank-question', '#question-view', vars)
     }
+    else if (question["Type"] === "TF")
+    {
+        let vars = {
+            current_question: question["Question_Num"],
+            question: question["Question"]
+        }
+        load_view('#tf-question', '#question-view', vars)
+    }
 }
 
 
@@ -123,6 +131,26 @@ async function check_answer(q_type)
             if(temp[i].checked)
             {
                  answer = temp[i].value;
+            }
+        }
+        if (answer === question["Answer"])
+        {
+            correct();
+        }
+        else
+        {
+            wrong();
+        }
+    }
+    else if (q_type === 'TF')
+    {
+        var answer;
+        let temp = document.getElementsByName('choice')
+        for(i=0; i<temp.length; i++)
+        {
+            if(temp[i].checked)
+            {
+                answer = temp[i].value;
             }
         }
         if (answer === question["Answer"])

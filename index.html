@@ -82,6 +82,23 @@
     </div>
 </script>
 
+<script id="tf-question" type="text/x-handlebars-template">
+    <h1 class="text-center">Question {{this.current_question}}</h1>
+    <h3 class="text-center">{{question}}</h3>
+    <form id="t-answer-form" onsubmit="check_answer('TF'); return false;">
+        <p>True or False?</p>
+        <input id="true" type="radio" name="choice" value="True" required>
+        <label for="true">True</label>
+        <br>
+        <input id="false" type="radio" name="choice" value="False" required>
+        <label for="false">False</label>
+        <br>
+        <input id="submit-answer" type="Submit" value="Submit">
+    </form>
+    <div id="result" class="text-center">
+    </div>
+</script>
+
 <script id="mc-question" type="text/x-handlebars-template">
     <h1 class="text-center">Question {{this.current_question}}</h1>
     <h3 class="text-center">{{question}}</h3>
